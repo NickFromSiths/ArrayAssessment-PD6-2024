@@ -10379,5 +10379,23 @@ const cards = [
 ];
 
 //1) while chaining array methods print each card that has a rarity value of "rare"
+cards.forEach((element) => {
+  if (element.rarity.includes("Rare")) {
+    console.log(element.name, element.rarity);
+  }
+});
 
 //2)while chainign array methods, print each card that includes "ICE" in it's printings
+// function ice() {
+//   cards.forEach((element) => {
+//     if (element.printings.includes("ICE")) {
+//       console.log(element.name, element.printings);
+//     }
+//   });
+// }
+const fiilter = cards.filter((card) => card.printings.includes("ICE"));
+console.log(fiilter);
+
+//this code is incredibly innefficeint and problematic
+
+//do i change it
