@@ -10393,8 +10393,7 @@ cards.forEach((element) => {
 //     }
 //   });
 // }
-const fiilter = cards.filter((card) => card.printings.includes("ICE"));
-console.log(fiilter);
+console.log(cards.filter((x) => x.printings.includes("ICE")));
 
 //this code is incredibly innefficeint and problematic
 
